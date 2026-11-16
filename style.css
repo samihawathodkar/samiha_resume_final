@@ -1,0 +1,375 @@
+
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #F7F3ED;
+    color: #302C32;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+h2 {
+    color: #453650;
+    font-size: 30px;
+}
+
+h3 {
+    color: #594565;
+}
+
+
+/* Header Section */
+
+header {
+    background-color: #E9E1ED;
+    padding: 50px 7%;
+}
+
+.hero {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.intro {
+    max-width: 600px;
+}
+
+.intro h1 {
+    font-size: 52px;
+    color: #453650;
+}
+
+.intro h2 {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.intro p {
+    font-size: 16px;
+}
+
+
+/* Profile Photo */
+
+.photo {
+    width: 230px;
+    height: 280px;
+    flex-shrink: 0;
+    background-color: #D5C8DA;
+    border: 2px solid #BCA9C5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Button */
+
+.button {
+    display: inline-block;
+    background-color: #453650;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #80658E;
+}
+
+
+/* Navigation Bar */
+
+nav {
+    background-color: #453650;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px 30px;
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #D5C8DA;
+}
+
+
+/* Main Content */
+
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+
+/* Sections */
+
+section {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    scroll-margin-top: 75px;
+}
+
+
+/* Section Labels */
+
+.label {
+    color: #A17EAD;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* ID Selectors */
+
+#about {
+    border-top: 4px solid #A17EAD;
+}
+
+#projects {
+    border-top: 4px solid #C6A77B;
+}
+
+#contact {
+    background-color: #E9E1ED;
+}
+
+
+/* Education and Experience */
+
+.info {
+    background-color: #FAF8FB;
+    padding: 20px;
+    margin: 18px 0;
+    border-left: 4px solid #A17EAD;
+    border-radius: 5px;
+}
+
+.info h3 {
+    margin-bottom: 5px;
+}
+
+.date {
+    color: #80658E;
+    font-size: 13px;
+}
+
+
+/* Projects Section */
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.project {
+    background-color: #FAF8FB;
+    padding: 20px;
+    border: 1px solid #E9E1ED;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-image {
+    width: 100%;
+    height: 150px;
+    background-color: #E9E1ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: #80658E;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.category {
+    color: #A17EAD;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+
+/* Skills Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #D5C8DA;
+    padding: 14px;
+    text-align: left;
+}
+
+th {
+    background-color: #453650;
+    color: white;
+}
+
+td {
+    background-color: #FAF8FB;
+}
+
+
+/* Achievements */
+
+li {
+    padding: 7px;
+}
+
+
+/* Interests */
+
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.interests span {
+    background-color: #E9E1ED;
+    color: #453650;
+    padding: 10px 18px;
+    border-radius: 20px;
+}
+
+
+/* Contact Section */
+
+#contact a {
+    color: #80658E;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #453650;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer a {
+    color: #E9E1ED;
+    text-decoration: none;
+}
+
+
+/* Mobile Screen Styling */
+
+@media screen and (max-width: 700px) {
+
+    header {
+        padding: 35px 6%;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .intro h1 {
+        font-size: 38px;
+    }
+
+    .photo {
+        width: 200px;
+        height: 240px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+
+}/* Education Logos */
+
+.education-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.education-logo {
+    width: 105px;
+    height: 105px;
+    object-fit: contain;
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #E9E1ED;
+}/* Centre the Fifth Project */
+
+.project:last-child {
+    grid-column: 1 / -1;
+    width: calc(50% - 10px);
+    justify-self: center;
+}
+
+
